@@ -1,12 +1,12 @@
-package com.iwork.system.service;
+package com.iwork.system.permission;
 
 import java.util.List;
 
 import com.iwork.system.entity.User;
 
-public interface UserService {
+public interface UserPermission {
 	
-	public void addUser(User user);
+	public void saveUser(User user);
 
 	public void updateUser(User user);
 
