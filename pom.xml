@@ -1,21 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>iHome</groupId>
-	<artifactId>iHome</artifactId>
+	<groupId>iwork</groupId>
+	<artifactId>iwork</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>iHome</name>
+	<name>iwork</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>3.1.0.RELEASE</spring.version>
-		<hibernate.version>3.6.1.Final</hibernate.version>
+		<spring.version>4.0.0.RELEASE</spring.version>
+		<hibernate.version>4.3.0.Final</hibernate.version>
 		<struts2.version>2.3.16</struts2.version>
 	</properties>
 
 	<build>
-		<finalName>iHome</finalName>
+		<finalName>iwork</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
@@ -142,6 +142,11 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.0.2.Final</version>
+        </dependency>
 
 		<!-- Struts2 -->
 		<dependency>
@@ -197,6 +202,12 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		 <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>0.2.23</version>
+        </dependency>
 
 		<dependency>
 			<groupId>com.mchange</groupId>
