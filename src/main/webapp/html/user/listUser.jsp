@@ -12,7 +12,7 @@
 		<tr>
 			<th>id</th>
 			<th>userName</th>
-			<th>userEmail</th>
+			<th>password</th>
 			<th>update</th>
 			<th>delete</th>
 		</tr>
@@ -20,7 +20,7 @@
 			<tr>
 				<td><s:property value="#user.id" /></td>
 				<td><s:property value="#user.userName" /></td>
-				<td><s:property value="#user.userEmail" /></td>
+				<td><s:property value="#user.password" /></td>
 				<td><s:a href="updateUser.action?user.id=%{#user.id}">修改</s:a></td>
 				<td><s:a href="deleteUser.action?user.id=%{#user.id}">删除</s:a></td>
 			</tr>

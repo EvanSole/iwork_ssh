@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>用户登录</title>
+<title>用户新增</title>
 </head>
 <body>
-	<s:form action="loginUser">
+	<s:form action="addUser">
 		<s:textfield name="user.userName" label="userName"></s:textfield>
 		<s:password name="user.password" label="password"></s:password>
 		<s:submit value="submit"></s:submit>

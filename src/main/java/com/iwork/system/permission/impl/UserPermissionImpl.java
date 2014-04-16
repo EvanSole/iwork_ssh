@@ -13,10 +13,6 @@ public class UserPermissionImpl extends HibernateDaoSupport implements UserPermi
 		this.getHibernateTemplate().save(user);
 	}
 
-	public List<User> getAllUsers() {
-		return null;
-	}
-
 	public User getUser(Integer id) {
 		return (User) this.getHibernateTemplate().get(User.class, id);
 	}
@@ -27,6 +23,10 @@ public class UserPermissionImpl extends HibernateDaoSupport implements UserPermi
 
 	public void deleteUser(User user) {
 		this.getHibernateTemplate().delete(user);
+	}
+
+	public List<User> getAllUsers() {
+		return null;
 	}
 
 }

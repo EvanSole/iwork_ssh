@@ -5,13 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>用户更新</title>
+<title>用户登录</title>
 </head>
 <body>
-	<s:form action="updateUser">
-		<s:hidden name="user.id" value="%{#request.user.id}" ></s:hidden>
-		<s:textfield name="user.userName" value="%{#request.user.userName}" label="userName"></s:textfield>
-		<s:textfield name="user.userEmail" value="%{#request.user.userEmail}" label="userEmail"></s:textfield>
+	<s:form action="login">
+		<s:textfield name="user.userName" label="userName"></s:textfield>
+		<s:password name="user.password" label="password"></s:password>
 		<s:submit value="submit"></s:submit>
 	</s:form>
 </body>

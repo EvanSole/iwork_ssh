@@ -1,5 +1,7 @@
 package com.iwork.system;
 
-public class UserServiceTest {
+import junit.framework.TestCase;
+
+public class UserServiceTest extends TestCase{
 
 }
