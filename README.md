@@ -1,6 +1,6 @@
 iwork_ssh
 =========
-struts2、spring、hibernate 、angularjs、bootstrap、shiro、jquery、jpa
+struts2、spring4、hibernate4 、angularjs、bootstrap3、shiro、jquery、jpa
 
 jetty:run
 
